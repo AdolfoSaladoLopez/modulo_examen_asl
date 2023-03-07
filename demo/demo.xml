@@ -1,0 +1,77 @@
+<odoo>
+    <data>
+        <!--
+                  <record id="object0" model="modulo_examen_asl.modulo_examen_asl">
+                    <field name="name">Object 0</field>
+                    <field name="value">0</field>
+                  </record>
+
+                  <record id="object1" model="modulo_examen_asl.modulo_examen_asl">
+                    <field name="name">Object 1</field>
+                    <field name="value">10</field>
+                  </record>
+
+                  <record id="object2" model="modulo_examen_asl.modulo_examen_asl">
+                    <field name="name">Object 2</field>
+                    <field name="value">20</field>
+                  </record>
+
+                  <record id="object3" model="modulo_examen_asl.modulo_examen_asl">
+                    <field name="name">Object 3</field>
+                    <field name="value">30</field>
+                  </record>
+
+                  <record id="object4" model="modulo_examen_asl.modulo_examen_asl">
+                    <field name="name">Object 4</field>
+                    <field name="value">40</field>
+                  </record>
+        -->
+
+<!--        &lt;!&ndash; DATOS CLIENTES &ndash;&gt;
+        <record id="object0" model="cliente.modulo">
+            <field name="nombre">Adolfo Salado</field>
+            <field name="direccion">Cesur Málaga Este, 11</field>
+            <field name="ciudad">Málaga</field>
+            <field name="estado">Málaga</field>
+            <field name="codigo_postal">29017</field>
+            <field name="pais">España</field>
+        </record>
+
+        <record id="object1" model="cliente.modulo">
+            <field name="nombre">Adolfo Salado Dos</field>
+            <field name="direccion">Cesur Málaga Este, 11</field>
+            <field name="ciudad">Málaga</field>
+            <field name="estado">Málaga</field>
+            <field name="codigo_postal">29017</field>
+            <field name="pais">España</field>
+        </record>-->
+
+        <!--&lt;!&ndash; DATOS FACTURA &ndash;&gt;
+        <record id="object0" model="factura.modulo">
+            <field name="numero_factura">12345</field>
+            <field name="fecha_vencimiento">2023/10/10"</field>
+            <field name="monto_total">1500.0</field>
+        </record>
+
+        <record id="object1" model="factura.modulo">
+            <field name="numero_factura">54321</field>
+            <field name="fecha_vencimiento">2023/10/10</field>
+            <field name="monto_total">1800.0</field>
+        </record>-->
+
+
+<!--        &lt;!&ndash; DATOS PRODUCTO &ndash;&gt;
+        <record id="object0" model="producto.modulo">
+            <field name="nombre">Tijeras</field>
+            <field name="descripcion">Tijeras de podar"</field>
+            <field name="precio">40.0</field>
+        </record>
+
+        <record id="object1" model="producto.modulo">
+            <field name="nombre">Cartulina</field>
+            <field name="descripcion">Cartulina grande</field>
+            <field name="precio">30.0</field>
+        </record>-->
+
+    </data>
+</odoo>

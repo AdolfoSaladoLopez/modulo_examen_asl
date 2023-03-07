@@ -1,0 +1,82 @@
+<odoo>
+    <data>
+
+        <!-- VISTAS DE ÁRBOL -->
+        <!-- ÁRBOL CLIENTE -->
+        <record model="ir.ui.view" id="modulo_arbol_cliente">
+            <field name="name">Arbol_Cliente</field>
+            <field name="model">cliente.modulo</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="direccion"/>
+                    <field name="ciudad"/>
+                    <field name="estado"/>
+                    <field name="codigo_postal"/>
+                    <field name="pais"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="modulo_arbol_factura">
+            <field name="name">Arbol_Factura</field>
+            <field name="model">factura.modulo</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="numero_factura"/>
+                    <field name="fecha_emision"/>
+                    <field name="fecha_vencimiento"/>
+                    <field name="monto_total"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="modulo_formulario_producto">
+            <field name="name">Formulario_Producto</field>
+            <field name="model">producto.modulo</field>
+            <field name="arch" type="xml">
+                <form string="Formulario Producto">
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="Nombre" colspan="2"/>
+                            <field name="nombre"/>
+                        </group>
+
+                        <group colspan="2" col="2">
+                            <separator string="Descripcion" colspan="2"/>
+                            <field name="descripcion"/>
+                        </group>
+
+                        <group colspan="2" col="2">
+                            <separator string="precio" colspan="2"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="cliente_action">
+            <field name="name">clientes</field>
+            <field name="res_model">cliente.modulo</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="factura_action">
+            <field name="name">facturas</field>
+            <field name="res_model">factura.modulo</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="producto_action">
+            <field name="name">productos</field>
+            <field name="res_model">producto.modulo</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="modulo_examen" id="modulo_examen"/>
+        <menuitem name="Arbol Cliente" id="cliente_submenu" parent="modulo_examen"/>
+        <menuitem name="Clientes" id="cliente_sub_submenu" parent="cliente_submenu"
+                  action="cliente_action"/>
+    </data>
+</odoo>
